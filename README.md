@@ -17,3 +17,25 @@ console.log
 What is an eventEmitter?
   An event emitter is the javascript core that is responile for the genration fo the events. 
   An event is being created based on some action being perforemed .
+
+
+* What is the fundamental piece of understanding how the core node modules of node.js built would be with the Object.create and the prototypes.
+
+
+```
+var person = {
+  firstname: "Mohan",
+  lastname: "Prathap"
+  fullname: function(){
+    this.firstname + "::::" + this.lastname 
+  }
+}
+
+var john = Object.create(person);
+var jane = Object.create(person);
+john.firstname = "John";
+jane.firstname = "Jane";
+console.log(john.fullname);
+console.log(jane.fullname);
+```
+

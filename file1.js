@@ -1,4 +1,5 @@
-var Emitter = require('./emitter');
+var Emitter = require('events');
+var util = require('util');
 var emtr = new Emitter();//this creates a new object of the Emitter functino
 
 //now we want to add the event listeners on the emtr we can do that 

@@ -3,6 +3,10 @@ function Emitter(){
   }   
 }
 
+/*
+On the Prototype chain the methods are being added so what ever the objects
+that are being created from the "Emitter function" they will be created with the properties as defined below
+*/
 
 Emitter.prototype.on = function(type, data){
   this.events[type] = this.events[type] || []
