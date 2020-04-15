@@ -17,3 +17,4 @@ john.fullname();
 jane.fullname();
 
 //please have a look at the prototypechain.png for the sake of the prototype chaining concept understanding.
+
