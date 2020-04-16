@@ -109,3 +109,21 @@ console.log(p1.__proto__ == p2.__proto__);
 //the two prototypes of the two objects being created are tending to be equal
 
 ```
+
+
+* Is the Javascript asynchronous or synchronous?
+  Javascript is the Synchronous but when coming to the nodejs which execute the common js with the help of the V8 egine, runs asynchronously .
+
+* Libuv is the c++ core of the Node and it has the functionality to deal with the system events and why the 
+nodejs architecture is called non-blocking, event driver I/o architecture?
+Ans:
+```
+  - Let us take this by example that we want to make a request to the event driven non-blocking-I/O .
+  - Now that we have that eventloop in the libuv and that libuv has got the eventloop part and has got some queue where the events that are completed from the event loop will be put into that queue . Once the events are completed then the event related completion code would get executed and the execution of such code can happen by a callback getting triggered from the libuv to the V8 engine and the V8 engine being synchronous executes the code line by line and then if you look at the architecture on an overview for 100 requests that came to hit the node server all the 100 events would start the executions at the same time and the thread would not wait for the response to get done and move fo another task
+
+  The scenario could be explained well in the 
+  
+  
+  eventdrivennonblockingio.png
+
+```
