@@ -33,3 +33,18 @@
    * CONNEct: websiteaddress
 
    - THe response would indicate the mime type of the response being sent based on which the server s2 can parse the data  .
+
+
+
+   # What is the Semantic Versioning?
+   The Semantic Versioning consists of the following thing
+   ```
+             Major.Minor.Patch
+     Version:  1  .  7  .  2 
+   ```
+   - The patch version would be made to get increament if the bug fixes have been done then the patch number would be increased .
+   - The minor version update would take place based on the feature that we add .
+   - The Major change in the version would take place like when an engine is being added to the application or a seperate service is being added to the application and there would bugs for it when launched.
+   - For more notes on the Versioning please refere to the [semver.org]
+
+  
