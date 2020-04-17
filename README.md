@@ -127,3 +127,9 @@ Ans:
   eventdrivennonblockingio.png
 
 ```
+- What are the Buffers and the streams?
+  * Buffer:
+     A temporary place to store up the data when the data from one place is being moved to the other place, then this kind of the buffer is being used .
+  * Stream:
+     A stream is like a pipe through which data is made to enter and leave out from the buffer and the data flowed from the stream is being processed by the processor
+
